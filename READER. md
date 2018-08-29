@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <script src="https://code.jquery.com/jquery-3.1.1.js">
+            
+            
+        </script>
+        <style>body {
+    background-color:magenta;
+    align:justify;
+}
+
+button{
+    height:40px;
+    width:98%;
+    background-color:green;
+    border-style:inset ;
+    font-weight:bold;
+    font-size:15px;
+    font-family:sans-serif;
+}
+
+input[type=number]{
+    height:20px;
+    width:20%;
+    background-color:#ffffff;
+    text-align:center;
+    font-weight:bold;
+}
+    
+fieldset{
+    background-color:yellow;
+    border-color: black;
+    border-radius:10px;
+    border-width:5px;
+}
+
+button:onhover{
+    background-color:#32e228;
+}
+
+#res{
+    font-weight:bold;
+    font-style:italic ;
+}
+
+input{
+    background-color:#ffffff;
+}</style><script>alert("WELCOME TO THIS QUIZ.");
+alert("RULES\n\n10 POINTS FOR CORRECT ANSWERS \n\n -5 FOR WRONG ANSWERS.");
+alert("Pass marks is 50")
+
+
+function myFunction(){
+    b=0;
+    
+   var e= document.getElementById("11");
+   var f= document.getElementById("12");
+   var g= document.getElementById("13");
+   var h= document.getElementById("14");
+   var i= document.getElementById("15");
+   var j= document.getElementById("16");
+   var k= document.getElementById("17");
+   var l= document.getElementById("18");
+   var m= document.getElementById("19");
+   var n= document.getElementById("20");
+   var re= document.getElementById("res")
+     
+    
+    if(e.checked){
+        b+=10;
+        $("#q1").css("border-color","green");
+    }
+    else{
+        b-=5;
+        $("#q1").css("border-color","red");
+    }
+    
+    if(f.checked){
+        b+=10;
+        $("#q2").css("border-color","green");
+    }
+    else{
+        b-=5;
+        $("#q2").css("border-color","red");
+    }
+    
+    if(g.checked){
+        b+=10;
+        $("#q3").css("border-color","green");
+    }
+    else{
+        b-=5;
+        $("#q3").css("border-color","red");
+    }
+    
+    if(h.checked){
+        b+=10;
+        $("#q4").css("border-color","green");
+    }
+    else{
+        b-=5;
+        $("#q4").css("border-color","red");
+    }
+    
+    if(i.checked){
+        b+=10;
+        $("#q5").css("border-color","green");
+    }
+    else{
+        b-=5;
+        $("#q5").css("border-color","red");
+    }
+    
+    if(j.checked){
+        b+=10;
+        $("#q6").css("border-color","green");
+    }
+    else{
+        b-=5;
+        $("#q6").css("border-color","red");
+    }
+    
+    if(k.checked){
+        b+=10;
+        $("#q7").css("border-color","green");
+    }
+    else{
+        b-=5;
+        $("#q7").css("border-color","red");
+    }
+    
+    if(l.checked){
+        b+=10;
+        $("#q8").css("border-color","green");
+    }
+    else{
+        b-=5;
+        $("#q8").css("border-color","red");
+    }
+    
+    if(m.checked){
+        b+=10;
+        $("#q9").css("border-color","green");
+    }
+    else{
+        b-=5;
+        $("#q9").css("border-color","red");
+    }
+    
+    if(n.checked){
+        b+=10;
+        $("#q10").css("border-color","green");
+    }
+    else{
+        b-=5;
+        $("#q10").css("border-color","red");
+    }
+    
+   
+    if (b>= 50){
+    
+     
+     re.value= " You pass the test."
+    }
+    
+    else{
+        re.value ="You failed in the test"
+    }
+    
+  var score = document.getElementById("sco");
+  
+  score.value = b ;
+}</script>
+    </head>
+    <body>
+    
+    
+        
+          <fieldset id="q1"> 
+          <b>Q1. Country that has the highest in Barley Production ?</b><br>
+           
+           <input type="radio" name="1" value="A. India">A. India<br>
+           <input type="radio" name="1" value="B. China">B. China<br>
+           <input type="radio" name="1" value="C. Russia" id="11">C. Russia<br>
+           <input type="radio" name="1" value="D. France">D. France<br><br>
+               
+           </fieldset><br>
+            
+            <fieldset id="q2"><b>Q2. The device used for measuring altitudes is ?</b><br>
+           
+           <input type="radio" name="2" value="A. Altimeter" id="12">A. Altimeter<br>
+           <input type="radio" name="2" value="B. Galvanometer">B. Galvanometer<br>
+           <input type="radio" name="2" value="C. Ammeter">C. Ammeter<br>
+           <input type="radio" name="2" value="D. Audiometer">D. Audiometer<br><br>
+               
+           </fieldset><br>
+         
+           <fieldset id="q3"><b> Q3. The chief ore of Aluminium is ?</b><br>
+           
+           <input type="radio" name="3" value="A. Iron">A. Iron<br>
+           <input type="radio" name="3" value="B. Cryolite">B. Cryolite<br>
+           <input type="radio" name="3" value="C. Bauxite" id="13">C. Bauxite<br>
+           <input type="radio" name="3" value="D. Haematite">D. Haematite<br><br>
+           
+           </fieldset><br>
+            
+           <fieldset id="q4"><b>Q4. Country that was called as Land of Rising Sun ?</b><br>
+           
+           <input type="radio" name="4" value="Japan" id="14">A. Japan<br>
+           <input type="radio" name="4" value="Russia">B. Russia<br>
+           <input type="radio" name="4" value="Korea">C. Korea<br>
+           <input type="radio" name="4" value="Holland">D. Holland<br><br>
+           
+           </fieldset><br>
+            
+           <fieldset id="q5"><b>Q5. Deficiency of Iron leads to ?</b><br>
+           
+           <input type="radio" name="5" value="Rickets">A. Rickets<br>
+           <input type="radio" name="5" value="Malaria">B. Malaria<br>
+           <input type="radio" name="5" value="Dental Cavity">C. Dental Cavity<br>
+           <input type="radio" name="5" value="Anaemia" id="15">D. Anaemia<br><br>
+           
+           </fieldset><br>
+            
+           <fieldset id="q6"><b>Q6. The chemical name of Chloroform is ?</b><br>
+           <input type="radio" name="6" value="Sulphuric Acid">A. Sulphuric Acid<br>
+           <input type="radio" name="6" value="B. Sodium Carbonate">B. Sodium Carbonate<br>
+           <input type="radio" name="6" value="Sodium Chloride">C. Sodium Chloride<br>
+           <input type="radio" name="6" value="Trichloromethane" id="16">D. Trichloromethane<br><br>
+           
+           </fieldset><br>
+            
+           <fieldset id="q7"><b>Q7.The hottest planet in the solar system?</b><br>
+           <input type="radio" name="7" value="Earth">A. Earth<br>
+           <input type="radio" name="7" value="Mars" >B. Mars<br>
+           <input type="radio" name="7" value="Venus"id="17">C. Venus<br>
+           <input type="radio" name="7" value="Jupiter">D. Jupiter<br><br>
+           
+           </fieldset><br>
+           
+           <fieldset id="q8"><b>Q8. 5:124 :: 7:__</b><br>
+           <input type="radio" name="8" value="125">A. 125<br>
+           <input type="radio" name="8" value="342" id="18">B. 342<br>
+           <input type="radio" name="8" value="248">C. 248<br>
+           <input type="radio" name="8" value="343">D. 343<br><br>
+           
+           </fieldset><br>
+           
+           <fieldset id="q9"><b>Q9. Which one of the following planet belongs to inner planet group as well as outer planet group?</b><br>
+           
+           <input type="radio" name="9" value="Mars" id="19">A. Mars<br>
+           <input type="radio" name="9" value="Jupiter">B. Jupiter<br>
+           <input type="radio" name="9" value="Earth">C. Earth<br>
+           <input type="radio" name="9" value="Venus">D. Venus<br><br>
+           
+           </fieldset><br>
+           
+           <fieldset id="q10"><b>Q10. In which of the following countries was 'Gadar Party' introduced?</b><br>
+           <input type="radio" name="10" value="France">A. France<br>
+           <input type="radio" name="10" value="Spain">B. Spain<br>
+           <input type="radio" name="10" value="Germany">C. Germany<br>
+           <input type="radio" name="10" value="U.S.A." id="20">D. U.S.A.<br>
+           
+           </fieldset><br>
+         
+           <fieldset id="scor">
+               
+           <b> Your score :</b><input type="number" name="score" value="0" id="sco" disabled>Points
+            
+           </fieldset><br><br> 
+           <button type="submit" onClick="myFunction()">Submit</button><br><br><fieldset>Result:<input type="text" id="res" disabled></fieldset><br><br>
+           
+<fieldset><b> <i>Your performance:</i></b><br><br>
+
+<u>If your score is between</u><br>
+-50 to 0 : Need more hard work.<br>
+0 to 30 : Average<br>
+30 to 60 : Intelligent<br>
+60 to 80 : Brilliant<br>
+Over 80 : Amazingly Brilliant</fieldset><br>
+
+
+        
+    </body>
+</html>
